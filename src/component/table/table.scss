@@ -1,0 +1,29 @@
+.table{
+    .cellWraper{
+        display: flex;
+        align-items: center;
+
+        .image{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Active{
+            color: green;
+            background-color: rgba(0, 128, 0, .151);
+        }
+        &.Inactive{
+            color: red;
+            background-color: rgba($color: red, $alpha: .5)
+            
+        }
+    }
+}
